@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: prediction
+  description: A plugin that allows the user to predict any perticular crypto coin price in future".
+  version: 'v1'
+servers:
+  - url: http://localhost:3333
+paths:
+  /predict/{username}:
+    get:
+      operationId: getprediction
+      summary: Get result of prediction
+      parameters:
+      - in: path
+        name: username
+        schema:
+            type: string
+        required: true
+        description: The name of the user.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getPredictionResponse'
+    
+components:
+  schemas:
+    getTodosResponse:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The prediction of crypto.

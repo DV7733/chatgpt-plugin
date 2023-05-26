@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "prediction Plugin",
+  "name_for_model": "prediction",
+  "description_for_human": "Plugin for predicte crypto.you predict any coins future price.",
+  "description_for_model": "Plugin for predicte crypto.you predict any coins future price.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3333/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:3333/image/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "http://www.example.com/legal"
+}

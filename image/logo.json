@@ -1,0 +1,10 @@
+{
+    "schema_version": "logo",
+    "name_for_human": "To Do List Plugin",
+    "name_for_model": "todo",
+    "description_for_human": "Plugin for managing a to-do list. You can add, remove and view your to do list.",
+    "description_for_model": "Plugin for managing a to-do list. You can add, remove and view your to do list.",
+    "auth": {
+      "type": "none"
+    }
+} 
